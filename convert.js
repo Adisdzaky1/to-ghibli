@@ -138,7 +138,7 @@ export default async (req, res) => {
 
   try {
     // Simpan file yang diupload
-    const tempFilePath = `/tmp/${Date.now()}.jpg`;
+    const tempFilePath = `/app/${Date.now()}.jpg`;
     await writeFile(tempFilePath, req.body);
     
     // Ekstrak parameter dari body
